@@ -1,79 +1,106 @@
-# Auto Flow - Tự động hóa Prompt cho VEO
+# Auto Flow User Guide [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md) [![English](https://img.shields.io/badge/English-blue)](README.md) 
 
-**Auto Flow** là một tiện ích mở rộng mạnh mẽ cho Google Chrome, được thiết kế để tự động hóa hoàn toàn quy trình tạo video hàng loạt của bạn trên nền tảng **Google Flow**, hỗ trợ các mô hình AI tạo video mới nhất như VEO.
+## 1. Introduction
 
-Công cụ này giúp bạn tiết kiệm hàng giờ làm việc thủ công, cho phép bạn nhập hàng trăm prompt và để extension tự động thực hiện phần còn lại.
+**Auto Flow** is a Chrome extension designed to automate the bulk video creation workflow on the Google Flow platform.
 
-## ✨ Tính năng nổi bật
+This tool saves you time by automatically submitting batches of prompts or images for video generation, supporting the latest models like VEO (Veo 2, Veo 3.1), and automatically downloading the results.
 
-  * **Tự động hóa hàng loạt**: Gửi hàng loạt prompt từ danh sách bạn cung cấp để tạo video một cách tự động.
-  * **Nhập liệu linh hoạt**: Dễ dàng dán danh sách prompt trực tiếp hoặc nhập từ tệp văn bản (`.txt`).
-  * **Tùy chỉnh mạnh mẽ**:
-      * Thiết lập số lần lặp lại cho mỗi prompt.
-      * Chọn prompt bắt đầu trong danh sách.
-      * Tùy chỉnh thời gian chờ giữa các lần gửi để phù hợp với tốc độ của hệ thống.
-  * **Quản lý thông minh**:
-      * Tạm dừng và tiếp tục quá trình bất cứ lúc nào.
-      * Theo dõi tiến trình trực quan qua thanh trạng thái.
-      * Tự động tạo dự án mới hoặc chạy trên dự án hiện có.
-  * **Lịch sử chi tiết**: Ghi lại log chi tiết của từng hành động và tổng hợp danh sách các prompt bị lỗi để dễ dàng sao chép và thực hiện lại.
-  * **Giao diện đa ngôn ngữ**: Hỗ trợ đầy đủ Tiếng Việt và Tiếng Anh.
+## 2. Setup & Requirements
 
-## 🚀 Cài đặt
+### Mandatory Requirements
+1.  **Google Flow Project Page:** This extension **only works** when you have a Google Flow project page open (e.g., `https://labs.google/fx/tools/flow/project/...`). If opened on any other page, the extension will display a notification and a button to navigate to Flow.
+2.  **Download Settings (Crucial):** For the "Auto-download videos" feature to work seamlessly, you **must** disable the "Ask where to save..." setting in your browser.
+    * Open Chrome Settings: `chrome://settings/downloads`
+    * Turn OFF the option: **Ask where to save each file before downloading**.
+    * You can also click the "Configure folder" link in the extension's Settings Tab to open this page quickly.
 
-Bạn có thể cài đặt tiện ích một cách dễ dàng từ Cửa hàng Chrome trực tuyến:
+## 3. Detailed User Guide
 
-[**Cài đặt Auto Flow**](https://chromewebstore.google.com/detail/auto-flow-prompt-automati/lhcmnhdbddgagibbbgppakocflbnknoa)
+The Auto Flow interface is divided into 4 main tabs.
 
-## 📖 Hướng dẫn sử dụng
+### 3.1. "Control" Tab
 
-### Bước 1: Điều hướng đến trang Google Flow
+This is where you set up and initiate the automation process.
 
-Tiện ích này được thiết kế để chỉ hoạt động trên trang Google Flow. Hãy truy cập vào địa chỉ sau:
+#### Step 1: Choose Creation Mode
 
-  * [https://labs.google/fx/tools/flow](https://labs.google/fx/tools/flow)
+You have two modes for video creation:
 
-Khi bạn ở đúng trang, biểu tượng của extension trên thanh công cụ sẽ sáng lên và có thể nhấp được.
+* **Text-to-Video:**
+    * **Purpose:** Create videos in bulk using only a list of text prompts.
+    * **Usage:** Select this mode and proceed to Step 2.
+* **Image-to-Video:**
+    * **Purpose:** Create videos in bulk by combining a list of images and a list of prompts.
+    * **Usage:**
+        1.  Click **"Select multiple images"** to upload your image files.
+        2.  Use the **"Sort images"** dropdown to select the processing order (A-Z, Z-A, Newest, Oldest).
+        3.  Proceed to Step 2 to input your prompts. These prompts will be used cyclically for your image list (e.g., 5 images and 2 prompts: images 1, 3, 5 use prompt 1; images 2, 4 use prompt 2).
 
-### Bước 2: Mở giao diện điều khiển
+#### Step 2: Input Data (Prompts/Images)
 
-Nhấp vào biểu tượng **Auto Flow** (hình chú vịt đeo tai nghe) trên thanh công cụ của Chrome để mở Bảng điều khiển bên (Side Panel).
+* **Input Prompts:**
+    * **Type Manually:** Type your prompts into the "Prompt List" text area. **Important:** Each prompt must be **separated by at least ONE BLANK LINE** (press Enter twice).
+    * **Import from File:** Click **"Import from file (.txt)"** to upload a text file. Prompts in the file must also be separated by blank lines.
+* **Input Images:** (For Image-to-Video mode only) Completed in Step 1.
 
-### Bước 3: Chuẩn bị và Cấu hình
+#### Step 3: Start the Process
 
-1.  **Nhập danh sách Prompt**:
+Click the **"Start"** button. You will be presented with two choices:
 
-      * **Cách 1 (Dán trực tiếp)**: Sao chép và dán danh sách các prompt của bạn vào ô "Danh sách prompt". Lưu ý: mỗi prompt phải nằm trên một dòng riêng biệt.
-      * **Cách 2 (Nhập từ file)**: Nhấn vào nút **"Nhập từ file (.txt)"** và chọn tệp văn bản chứa danh sách prompt của bạn.
+1.  **🚀 Create New Project:**
+    * The tool will automatically navigate to the Flow homepage, create a new project, and then begin running your tasks in that new project.
+    * *Recommended for starting a completely new batch of work.*
+2.  **➡️ Run on This Page:**
+    * The tool will immediately start running on the project you currently have open.
+    * *Recommended for continuing work on an existing project.*
 
-2.  **Tùy chỉnh Cài đặt (Không bắt buộc)**:
+#### Other Controls:
 
-      * Chuyển sang tab **"Cài Đặt"**.
-      * **Thực thi mỗi prompt**: Đặt số lần bạn muốn mỗi prompt được gửi đi (mặc định là 1).
-      * **Bắt đầu từ prompt**: Nếu bạn muốn bắt đầu từ một prompt cụ thể trong danh sách (không phải prompt đầu tiên), hãy nhập số thứ tự của nó vào đây.
-      * **Thời gian chờ**: Điều chỉnh khoảng thời gian chờ (tính bằng giây) sau khi gửi mỗi prompt để chờ video được tạo. Tăng thời gian này nếu bạn thấy quá trình bị lỗi do video chưa kịp tạo xong.
+* **Pause / Continue:** While running, the "Start" button becomes a "Pause" button. Click to pause the process, and click again ("Continue") to resume from where it left off.
+* **Stop:** Click this button to completely cancel the currently running process.
 
-### Bước 4: Bắt đầu tự động hóa
+### 3.2. "Settings" Tab
 
-1.  Quay lại tab **"Điều Khiển"**.
-2.  Nhấn nút **"Bắt đầu"**.
-3.  Công cụ sẽ hỏi bạn:
-      * **🚀 Tạo dự án mới**: Tự động tạo một project mới trên Flow rồi mới bắt đầu chạy.
-      * **➡️ Chạy luôn tại đây**: Chạy trực tiếp trên project bạn đang mở.
-4.  Chọn một phương án và quá trình sẽ tự động bắt đầu. Bạn có thể theo dõi tiến trình qua thanh trạng thái và log chi tiết trong tab **"Lịch Sử"**.
+Fine-tune the parameters to fit your needs.
 
-### Bước 5: Quản lý và xem kết quả
+* **Videos per task:** Choose the number of videos (1-4) that Flow should generate for EACH prompt or EACH image.
+* **Start from (Prompt/Image):** Enter the number of the task you want to start from. E.g., if you have 100 prompts and want to start at prompt #50, enter `50`.
+* **Video creation wait time (sec):** Set a random wait time range (min - max) after submitting each task. The tool will pick a random duration within this range to wait for the video to be generated before submitting the next task.
+* **Model (Optional):** Select the VEO model you wish to use (Fast or Quality). "Default" is typically Veo 3.1 - Fast.
+* **Ratio (T2V & I2V Crop):** Choose the aspect ratio for your videos (Landscape 16:9 or Portrait 9:16).
+* **Language:** Change the extension's interface language (English / Tiếng Việt).
+* **Auto-download videos:**
+    * When enabled, the tool will automatically scan for and download newly generated videos.
+    * **Note:** This feature requires you to disable "Ask where to save..." in your browser settings (see section 2. Setup & Requirements).
 
-  * **Tạm dừng/Tiếp tục**: Trong khi chạy, nút "Bắt đầu" sẽ chuyển thành nút **"Tạm dừng"**. Bạn có thể nhấp để tạm dừng và nhấp lại để tiếp tục.
-  * **Dừng hẳn**: Nhấn nút **"Dừng"** để kết thúc phiên làm việc ngay lập tức.
-  * **Xem lại Lỗi**: Sau khi hoàn tất, hãy vào tab **"Lịch Sử"** để xem các prompt đã bị lỗi (nếu có) và nhấn nút **"Sao chép các prompt lỗi"** để lưu lại và sử dụng cho lần sau.
+### 3.3. "History" Tab
 
-## ☕ Hỗ trợ tác giả
+Monitor and debug your workflow.
 
-Nếu bạn thấy tiện ích này hữu ích trong công việc của mình, đừng ngần ngại mời tác giả một ly cà phê để ủng hộ cho các dự án trong tương lai\!
+* **Detailed Log:** Shows a step-by-step log of what the tool is doing (task submitted, waiting, video downloaded, error, etc.).
+* **Failed Tasks:** Lists all prompts or image filenames that failed (e.g., due to a Google policy error, network issue, or an inability to process).
+    * The tool will automatically retry a failed task up to 5 times before marking it as failed.
+* **Copy Failed Prompts/Images:** Click this button to copy the entire list of failed tasks to your clipboard. You can paste this list into a new `.txt` file or directly into the prompt box to run them again.
+
+### 3.4. "More Tools" Tab
+
+Discover other useful extensions from the author.
+
+---
+
+## 4. Tips and Notes
+
+* **Policy Errors:** If Google Flow reports a policy error for a prompt or image, the tool will automatically detect it, log it in the History tab, and skip the task to continue the queue.
+* **Keep Tab Open:** Always keep the Google Flow tab (where the tool is running) open and visible for stable operation.
+* **Be Patient:** If you have a list of hundreds of tasks, be patient. The tool needs time to process and wait for Google Flow to generate the videos.
+
+## ☕ Support the author
+
+If you find this widget useful in your work, don't hesitate to buy the author a cup of coffee to support future projects!
 
 [http://duckmartians.info](http://duckmartians.info)
 
-## 📜 Giấy phép
+## 📜 License
 
-Dự án này được cấp phép theo Giấy phép MIT.
+This project is licensed under the MIT License.
