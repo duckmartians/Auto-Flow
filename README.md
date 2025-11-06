@@ -6,6 +6,8 @@
 
 This tool saves you time by automatically submitting batches of prompts or images for video generation, supporting the latest models like VEO (Veo 2, Veo 3.1), and automatically downloading the results.
 
+[![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/auto-flow-prompt-automati/lhcmnhdbddgagibbbgppakocflbnknoa)
+
 ## 2. Setup & Requirements
 
 ### Mandatory Requirements
