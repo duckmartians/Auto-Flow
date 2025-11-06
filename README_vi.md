@@ -6,6 +6,8 @@
 
 Tiện ích này giúp bạn tiết kiệm thời gian bằng cách tự động gửi hàng loạt các yêu cầu (prompt) hoặc hình ảnh để tạo video, hỗ trợ các model mới nhất như VEO (Veo 2, Veo 3.1) và tự động tải về kết quả.
 
+[![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/auto-flow-prompt-automati/lhcmnhdbddgagibbbgppakocflbnknoa)
+
 ## 2. Cài đặt & Yêu cầu
 
 ### Yêu cầu bắt buộc
