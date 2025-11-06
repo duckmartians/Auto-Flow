@@ -1,4 +1,4 @@
-# Hướng dẫn sử dụng Auto Flow
+# Hướng dẫn sử dụng Auto Flow [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md) [![English](https://img.shields.io/badge/English-blue)](README.md) 
 
 ## 1. Giới thiệu
 
@@ -94,3 +94,13 @@ Khám phá các tiện ích hữu ích khác từ tác giả.
 * **Lỗi Chính sách (Policy Error):** Nếu Google Flow báo lỗi chính sách (policy error) cho một prompt hoặc ảnh, tool sẽ tự động phát hiện, ghi lại trong tab Lịch Sử và bỏ qua tác vụ đó để tiếp tục chạy.
 * **Giữ Tab Mở:** Luôn giữ tab Google Flow (nơi tool đang chạy) được mở và hiển thị để đảm bảo hoạt động ổn định.
 * **Chờ đợi:** Nếu bạn có danh sách hàng trăm tác vụ, hãy kiên nhẫn. Tool cần thời gian để xử lý và chờ Google Flow tạo video.
+
+## ☕ Hỗ trợ tác giả
+
+Nếu bạn thấy tiện ích này hữu ích trong công việc của mình, đừng ngần ngại mời tác giả một ly cà phê để ủng hộ cho các dự án trong tương lai\!
+
+[http://duckmartians.info](http://duckmartians.info)
+
+## 📜 Giấy phép
+
+Dự án này được cấp phép theo Giấy phép MIT.
