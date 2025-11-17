@@ -77,7 +77,7 @@
 
 Phần mềm được phát triển và duy trì miễn phí. Nếu công cụ này giúp bạn tiết kiệm thời gian và nâng cao hiệu suất công việc, hãy cân nhắc mời tác giả một ly cà phê nhé\! ❤️
 
-[](https://duckmartians.info)
+[duckmartians.info](https://duckmartians.info)
 
 -----
 
