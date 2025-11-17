@@ -1,6 +1,6 @@
 [![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/auto-flow-prompt-automati/lhcmnhdbddgagibbbgppakocflbnknoa)
 
-# 🎬 Auto Flow - Automation for Google VEO AI [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md) [![English](https://img.shields.io/badge/English-blue)](README.md) 
+# 🎬 Auto Flow v7.5.5 - Automation for Google VEO AI [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md) [![English](https://img.shields.io/badge/English-blue)](README.md) 
 
 **Auto Flow** là tiện ích mở rộng (Extension) mạnh mẽ giúp tự động hóa quy trình sáng tạo video trên Google Flow (VEO). Công cụ giúp bạn "treo máy" để tạo hàng trăm video từ văn bản hoặc hình ảnh mà không cần thao tác thủ công lặp đi lặp lại.
 
