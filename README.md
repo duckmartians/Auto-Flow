@@ -42,7 +42,7 @@
 
 1.  Select **Image-to-Video** mode.
 2.  Click **Select images** to upload (supports selecting multiple images at once).
-3.  *(Optional)* Enter a supporting prompt. If left blank, AI will infer the context from the image.
+3.  Enter a prompt.
 4.  Click **Add to Queue** -\> **Start Queue**.
 
 ### 3\. Queue Management
