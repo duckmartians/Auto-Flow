@@ -44,7 +44,7 @@
 
 1.  Chọn chế độ **Image-to-Video**.
 2.  Nhấn **Chọn ảnh** để tải lên (hỗ trợ chọn nhiều ảnh cùng lúc).
-3.  *(Tùy chọn)* Nhập prompt hỗ trợ. Nếu để trống, AI sẽ tự suy luận từ ảnh.
+3.  Nhập prompt.
 4.  Nhấn **Thêm vào hàng chờ** -\> **Bắt đầu Hàng chờ**.
 
 ### 3\. Quản lý Hàng chờ (Queue)
