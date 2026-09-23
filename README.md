@@ -30,6 +30,7 @@ Or download directly: [auto-flow-extension_10.8.58.zip](https://github.com/duckm
 5. Done
    The extension now appears in the list. Click the puzzle-piece icon in
    the toolbar and pin it for quick access (optional).
+<img width="2557" height="695" alt="image" src="https://github.com/user-attachments/assets/ec0ae1a2-1a3e-4f0b-af55-c4b9a86c9311" />
 
 Updating to a newer version
 ---------------------------
