@@ -1,7 +1,7 @@
 Markdown
 # AutoFlow Extension — Manual Installation (Chrome / Edge)
 
-This extension is not on the Chrome Web Store, so it is installed manually as an "unpacked" extension. It takes about a minute.
+This version of the extension may not yet be updated on the Chrome Web Store or is awaiting review, so it is installed manually as an "unpacked" extension. This process takes about a minute.
 
 [![Download Extension](https://img.shields.io/badge/Download-Extension%20(.zip)-blue?style=for-the-badge&logo=googlechrome)](https://github.com/duckmartians/Auto-Flow/raw/main/auto-flow-extension_10.8.58.zip)
 
