@@ -11,11 +11,11 @@
 
 ## Install
 
-### Step 1 — Install from the Chrome Web Store (recommended)
+### Step 1 - Install from the Chrome Web Store (recommended)
 
 Open **[Auto Flow on the Chrome Web Store](https://chromewebstore.google.com/detail/auto-flow-prompt-automati/lhcmnhdbddgagibbbgppakocflbnknoa)** and click **Add to Chrome**. Chrome keeps it updated automatically. Pin it from the puzzle-piece icon in the toolbar for quick access (optional).
 
-### Alternative — Manual install from the .zip ("Load unpacked")
+### Alternative - Manual install from the .zip ("Load unpacked")
 
 Use this when the newest version is not on the Chrome Web Store yet (still in review). It takes about a minute and works in Chrome and Microsoft Edge.
 
@@ -36,7 +36,7 @@ Use this when the newest version is not on the Chrome Web Store yet (still in re
 
 </details>
 
-### Step 2 — Sign in &amp; pick a plan
+### Step 2 - Sign in &amp; pick a plan
 
 Auto Flow needs two sign-ins:
 - **Sign in with Google in the extension** to load your plan. Nothing can start until the plan has loaded.
@@ -58,7 +58,7 @@ Plans pay for the automation tool only. They do **not** mean unlimited generatio
 | Character library, Gemini watermark removal | Yes | Yes | Yes | Yes |
 | G-Labs Studio desktop app | No | No | Plus | Max (incl. Webhook API) |
 
-- **How to buy:** inside the extension, click the plan badge in the top bar → **Upgrade**. Pay with PayPal, USDT/Binance, or VietQR bank transfer (Vietnamese banks only). The plan activates on the Google account you signed in with; press **Refresh status** after 1–3 minutes.
+- **How to buy:** inside the extension, click the plan badge in the top bar → **Upgrade**. Pay with PayPal, USDT/Binance, or VietQR bank transfer (Vietnamese banks only). The plan activates on the Google account you signed in with; press **Refresh status** after 1-3 minutes.
 - 6 months cost the same as 5 months, a year the same as 10. Upgrading Plus → Max mid-term charges only the difference for the days left.
 - **One device at a time:** signing in on another device signs the old session out.
 - 4K video needs Lite or higher **and** a Google Flow Ultra account.
@@ -81,16 +81,16 @@ Keep the Flow tab open while a batch runs. You can close the control window: the
 
 ## Features
 
-- **Batch prompts** — paste or import a `.txt`; each prompt becomes a row. Run many rows at once with the number of threads you choose.
-- **Flow Image and Flow Video in one queue** — two generators sharing one queue, one image library and one character library.
-- **Reference images & library** — attach up to 10 images per prompt. The library assigns images to rows by keyword or by exact name. **Sequential** mode uses the previous row's result as the next row's reference to keep characters and scenes consistent.
-- **Character library** — save characters with an image, a personality and a voice (preset or custom, with preview), then call them with `@name` in Flow Image and in Flow Video's Ingredients mode.
-- **Randomized video duration** — one fixed duration, fully random, by formula (videos per length), or by a tag in the prompt: `[4s]`, `{6s}`, `<8s>`.
-- **Upscaling & download resolutions** — images at 1K / 2K / 4K, videos at 720p / 1080p / 4K. Only the resolutions you tick are downloaded.
-- **Gemini watermark removal** — removes the Gemini mark from the corner of images in the browser before saving, on every plan.
-- **Multi-task queue** — name tasks, edit their settings, pause / resume / stop / skip. Retry failed rows in one click, run only selected rows, filter by status. Temporary errors are retried automatically.
-- **Never lose your work** — the engine runs inside the Flow tab. Prompts, queue, results and settings are saved continuously and restored when you reopen the panel.
-- **File naming & folders** — save directly or one folder per task. Name files from presets (row number, prompt, timestamp, date, prefix) or your own pattern.
+- **Batch prompts** - paste or import a `.txt`; each prompt becomes a row. Run many rows at once with the number of threads you choose.
+- **Flow Image and Flow Video in one queue** - two generators sharing one queue, one image library and one character library.
+- **Reference images & library** - attach up to 10 images per prompt. The library assigns images to rows by keyword or by exact name. **Sequential** mode uses the previous row's result as the next row's reference to keep characters and scenes consistent.
+- **Character library** - save characters with an image, a personality and a voice (preset or custom, with preview), then call them with `@name` in Flow Image and in Flow Video's Ingredients mode.
+- **Randomized video duration** - one fixed duration, fully random, by formula (videos per length), or by a tag in the prompt: `[4s]`, `{6s}`, `<8s>`.
+- **Upscaling & download resolutions** - images at 1K / 2K / 4K, videos at 720p / 1080p / 4K. Only the resolutions you tick are downloaded.
+- **Gemini watermark removal** - removes the Gemini mark from the corner of images in the browser before saving, on every plan.
+- **Multi-task queue** - name tasks, edit their settings, pause / resume / stop / skip. Retry failed rows in one click, run only selected rows, filter by status. Temporary errors are retried automatically.
+- **Never lose your work** - the engine runs inside the Flow tab. Prompts, queue, results and settings are saved continuously and restored when you reopen the panel.
+- **File naming & folders** - save directly or one folder per task. Name files from presets (row number, prompt, timestamp, date, prefix) or your own pattern.
 - **Detailed log** with plain-language explanations of Flow errors.
 - **11 languages**: English, Tiếng Việt, 中文, हिन्दी, Español, Português (BR), Русский, বাংলা, اردو, Türkçe, ไทย.
 
@@ -104,7 +104,7 @@ Batch image generation on Google Flow. Pick the model, aspect ratio and up to 4 
 
 ### 🎬 Flow Video
 
-Batch Veo video generation in three modes: **Text → Video**, **Ingredients** (video from reference images and characters) and **Start / End frames**. Start/end images can be distributed automatically: 1 start – N ends, N starts – 1 end, chain 1:2 → 2:3, or pairs 1:2 → 3:4. With the Omni Flash model, each row can also take a reference video (or one video for every row). Choose a fixed or randomized duration and the download resolutions (720p / 1080p / 4K).
+Batch Veo video generation in three modes: **Text → Video**, **Ingredients** (video from reference images and characters) and **Start / End frames**. Start/end images can be distributed automatically: 1 start - N ends, N starts - 1 end, chain 1:2 → 2:3, or pairs 1:2 → 3:4. With the Omni Flash model, each row can also take a reference video (or one video for every row). Choose a fixed or randomized duration and the download resolutions (720p / 1080p / 4K).
 
 ### 📋 Queue manager
 
@@ -142,25 +142,25 @@ Removing the extension deletes its browser storage; files already in Downloads s
 
 ## Troubleshooting
 
-**Nothing starts / "Sign in with Google to load data from the server"** — sign in with Google in the extension, or press **Refresh status** so your plan limits load.
+**Nothing starts / "Sign in with Google to load data from the server"** - sign in with Google in the extension, or press **Refresh status** so your plan limits load.
 
-**"Could not open a Google Flow tab"** — open `https://flow.google.com/` in the same browser, sign in to Google, then press Start again.
+**"Could not open a Google Flow tab"** - open `https://flow.google.com/` in the same browser, sign in to Google, then press Start again.
 
-**"You are not signed in to Google Flow"** — sign in on the `flow.google.com` tab. The extension picks it up automatically.
+**"You are not signed in to Google Flow"** - sign in on the `flow.google.com` tab. The extension picks it up automatically.
 
-**"Flow tab not responding"** — reload (F5) the `flow.google.com` tab and try again.
+**"Flow tab not responding"** - reload (F5) the `flow.google.com` tab and try again.
 
-**"Your licence is being used on another device"** — one account runs on one device at a time. Sign in again to continue here.
+**"Your licence is being used on another device"** - one account runs on one device at a time. Sign in again to continue here.
 
-**4K is ticked but the run won't start** — 4K needs a Google Flow Ultra account. Untick 4K or sign in to Flow with an Ultra account.
+**4K is ticked but the run won't start** - 4K needs a Google Flow Ultra account. Untick 4K or sign in to Flow with an Ultra account.
 
-**Flow returns 403 / "requesting too fast"** — a temporary rate limit from Flow. Lower the thread count, wait a few minutes (or change IP with a VPN/proxy) and retry.
+**Flow returns 403 / "requesting too fast"** - a temporary rate limit from Flow. Lower the thread count, wait a few minutes (or change IP with a VPN/proxy) and retry.
 
-**"Daily image/video quota exhausted"** — your Flow account's quota for the day is used up. This comes from your Google plan, not from Auto Flow.
+**"Daily image/video quota exhausted"** - your Flow account's quota for the day is used up. This comes from your Google plan, not from Auto Flow.
 
-**A mode is locked and the plan table opens** — that feature is not in your current plan. Upgrade from the plan badge in the top bar.
+**A mode is locked and the plan table opens** - that feature is not in your current plan. Upgrade from the plan badge in the top bar.
 
-**The manually installed extension disappeared or stopped** — the unzipped folder was moved or deleted, or Developer mode was turned off. Restore the folder, turn Developer mode back on and reload the extension.
+**The manually installed extension disappeared or stopped** - the unzipped folder was moved or deleted, or Developer mode was turned off. Restore the folder, turn Developer mode back on and reload the extension.
 
 ---
 
