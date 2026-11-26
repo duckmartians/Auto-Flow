@@ -3,38 +3,16 @@
 <p align="center"><b>A Chrome extension that batch-generates AI images and videos on Google Flow: paste a prompt list, press Start, and every result is saved to your computer.</b></p>
 
 <p align="center">
-  <a href="https://chromewebstore.google.com/detail/auto-flow-prompt-automati/lhcmnhdbddgagibbbgppakocflbnknoa"><img alt="Get it on the Chrome Web Store" src="https://img.shields.io/badge/Chrome%20Web%20Store-Add%20to%20Chrome-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white"></a>&nbsp;
-  <a href="https://github.com/duckmartians/Auto-Flow/raw/main/auto-flow-extension_10.8.58.zip"><img alt="Download the extension (.zip)" src="https://img.shields.io/badge/Download-Extension%20(.zip)-555555?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
+  <a href="https://chromewebstore.google.com/detail/auto-flow-prompt-automati/lhcmnhdbddgagibbbgppakocflbnknoa"><img alt="Get it on the Chrome Web Store" src="https://img.shields.io/badge/Chrome%20Web%20Store-Add%20to%20Chrome-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
 </p>
 
 ---
 
 ## Install
 
-### Step 1 - Install from the Chrome Web Store (recommended)
+### Step 1 - Install from the Chrome Web Store
 
 Open **[Auto Flow on the Chrome Web Store](https://chromewebstore.google.com/detail/auto-flow-prompt-automati/lhcmnhdbddgagibbbgppakocflbnknoa)** and click **Add to Chrome**. Chrome keeps it updated automatically. Pin it from the puzzle-piece icon in the toolbar for quick access (optional).
-
-### Alternative - Manual install from the .zip ("Load unpacked")
-
-Use this when the newest version is not on the Chrome Web Store yet (still in review). It takes about a minute and works in Chrome and Microsoft Edge.
-
-<details>
-<summary><b>Show the manual install steps</b></summary>
-
-1. **Download and unzip.** Download [`auto-flow-extension_10.8.58.zip`](https://github.com/duckmartians/Auto-Flow/raw/main/auto-flow-extension_10.8.58.zip), right-click it and choose **Extract All…**. You get a folder that contains `manifest.json`.
-2. **Open the Extensions page.** Type `chrome://extensions/` in the address bar (on Edge: `edge://extensions/`).
-3. **Turn on Developer mode** with the switch in the top-right corner of the page.
-4. **Load the extension.** Click **Load unpacked** and select the **unzipped folder** (the one that contains `manifest.json`, not the .zip file).
-5. **Done.** The extension appears in the list. Pin it from the puzzle-piece icon (optional).
-
-**Updating a manual install:** download and unzip the new .zip over the old folder, then go to `chrome://extensions/` and click the circular **Reload** icon on the extension's card.
-
-**Keep in mind:**
-- Keep the unzipped folder where it is. Deleting or moving it removes the extension from the browser.
-- Developer mode must stay **on** for an unpacked extension to keep running.
-
-</details>
 
 ### Step 2 - Sign in &amp; pick a plan
 
@@ -159,8 +137,6 @@ Removing the extension deletes its browser storage; files already in Downloads s
 **"Daily image/video quota exhausted"** - your Flow account's quota for the day is used up. This comes from your Google plan, not from Auto Flow.
 
 **A mode is locked and the plan table opens** - that feature is not in your current plan. Upgrade from the plan badge in the top bar.
-
-**The manually installed extension disappeared or stopped** - the unzipped folder was moved or deleted, or Developer mode was turned off. Restore the folder, turn Developer mode back on and reload the extension.
 
 ---
 
